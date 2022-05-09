@@ -4,173 +4,160 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Le délice des sens</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="assets/styles/restaurant.css">
+    <title>Menu | Restaurant A la française</title>
 </head>
 <body>
     <header>
-        <i>arrox_left</i>
-        <hgroup>
-            <h1>ohmyfood</h1>
-        </hgroup>
-        <img src="assets/images/restaurants/le_délice_des_sens.jpg" alt="">
+        <i>arrow_left</i>
+
+        <h1>ohmyfood</h1>
+
+        <img src="assets/images/restaurants/à_la_française.jpg" alt="">
     </header>
     <main>
-        <h1>Le délice des sens<i class="fa-solid fa-heart"></i></h1>
+        <h1 class="shrikhand">Le délice des sens<i class="fa-solid fa-heart"></i></h1>
 
         <form>
-            <fieldset class="starterBox">
+            <fieldset>
                 <legend>ENTREES</legend>
 
                 <div class="line"></div>
 
-                <label for="starter1">Tartare de thon</label>
+                <label for="starter1">
+                    <b>Tartare de thon</b>
 
-                <input type="radio" id="starter1">
-                    <strong>Tartare de thon</strong>
-                    
-                    <div>
-                        <p>Assaisonné au yuzu</p>
+                    <span>
+                        <span>Assaisonné au yuzu</span>
+
                         <span>25€</span>
-                    </div>
-                    
-                    <div class="checkBox">
-                        <i class="fa-solid fa-circle-check"></i>
-                    </div>
-                </input>
+                    </span>
 
-                <label for="starter2">Bouchée de homard croustillant</label>
+                    <i class="fa-solid fa-circle-check"></i>
+                </label>
+                <input type="radio" id="starter1" value="starter1" name="starter">
 
-                <input type="radio" id="starter2">
-                    <strong>Bouchée de homard croustillant</strong>
-                    
-                    <div>
-                        <p>Et sa farandole de petits légumes</p>
-                        <span>35€</span>
-                    </div>
-                    
-                    <div class="checkBox">
-                        <i class="fa-solid fa-circle-check"></i>
-                    </div>
-                </input>
+                        <label for="starter2">
+                            <b>Bouchée de homard croustillant</b>
+                            
+                            <span>
+                                <span>Et sa farandole de petits légumes</span>
 
-                <label for="starter3">Velouté de cèpes</label>
+                                <span>35€</span>
+                            </span>
+                        
+                            <i class="fa-solid fa-circle-check"></i>
+                        </label>
+                        <input type="radio" id="starter2" value="starter2" name="starter">
 
-                <input type="radio" id="starter2">
-                    <strong>Velouté de cèpes</strong>
-                    
-                    <div>
-                        <p>Aux truffes</p>
-                        <span>20€</span>
-                    </div>
-                    
-                    <div class="checkBox">
-                        <i class="fa-solid fa-circle-check"></i>
-                    </div>
-                </input>
+                                <label for="starter3">
+                                    <b>Velouté de cèpes</b>
+                                    
+                                    <span>
+                                        <span>Aux truffes</span>
+
+                                        <span>20€</span>
+                                    </span>
+
+                                    <i class="fa-solid fa-circle-check"></i>
+                                </label>
+                                <input type="radio" id="starter3" value="starter3" name="starter">
             </fieldset> 
 
-            <fieldset class="mainsBox">
+            <fieldset>
                 <legend>PLATS</legend>
 
                 <div class="line"></div>
 
-                <label for="main1">Poulet rôti aux herbes de provence</label>
-
-                <input type="radio" id="starter1">
-                    <strong>Poulet rôti aux herbes de provence</strong>
+                <label for="main1">
+                    <b>Poulet rôti aux herbes de provence</b>
                     
-                    <div>
-                        <p>Et sa crème de truffe</p>
+                    <span>
+                        <span>Et sa crème de truffe</span>
+
                         <span>40€</span>
-                    </div>
-                    
-                    <div class="checkBox">
-                        <i class="fa-solid fa-circle-check"></i>
-                    </div>
-                </input>
+                    </span>
 
-                <label for="main2">Langoustine rôtie</label>
+                    <i class="fa-solid fa-circle-check"></i>
+                </label>
+                <input type="radio" id="main1" value="main1" name="main">
 
-                <input type="radio" id="starter2">
-                    <strong>Langoustine rôtie</strong>
-                    
-                    <div>
-                        <p>Et ses légumes de saison</p>
-                        <span>35€</span>
-                    </div>
-                    
-                    <div class="checkBox">
-                        <i class="fa-solid fa-circle-check"></i>
-                    </div>
-                </input>
 
-                <label for="main3">Côte de boeuf angus</label>
+                        <label for="main2">
+                            <b>Langoustine rôtie</b>
+                            
+                            <span>
+                                <span>Et ses légumes de saison</span>
 
-                <input type="radio" id="starter2">
-                    <strong>Côte de boeuf angus</strong>
-                    
-                    <div>
-                        <p>Et sa purée de panais</p>
-                        <span>44€</span>
-                    </div>
-                    
-                    <div class="checkBox">
-                        <i class="fa-solid fa-circle-check"></i>
-                    </div>
-                </input>
+                                <span>35€</span>
+                            </span>
+                            
+                            <i class="fa-solid fa-circle-check"></i>
+                        </label>
+                        <input type="radio" id="main2" value="main2" name="main">
+
+                                <label for="main3">
+                                    <b>Côte de boeuf angus</b>
+                                    
+                                    <span>
+                                        <span>Et sa purée de panais</span>
+
+                                        <span>44€</span>
+                                    </span>
+
+                                    <i class="fa-solid fa-circle-check"></i>
+                                </label>
+                                <input type="radio" id="main3" value="main3" name="main">
             </fieldset> 
 
-            <fieldset class="dessertBox">
+            <fieldset>
                 <legend>DESSERTS</legend>
 
                 <div class="line"></div>
 
-                <label for="dessert1">Farandole de desserts</label>
+                <label for="dessert1">
+                    <b>Farandole de desserts</b>
+    
+                    <span>
+                        <span>Du chef</span>
 
-                <input type="radio" id="starter1">
-                    <strong>Farandole de desserts</strong>
-                    
-                    <div>
-                        <p>Du chef</p>
                         <span>18€</span>
-                    </div>
-                    
-                    <div class="checkBox">
-                        <i class="fa-solid fa-circle-check"></i>
-                    </div>
-                </input>
+                    </span>
 
-                <label for="dessert2">crème brulée</label>
+                    <i class="fa-solid fa-circle-check"></i>
+                </label>
+                <input type="radio" id="dessert1" value="dessert1" name="dessert">
 
-                <input type="radio" id="starter2">
-                    <strong>crème brulée</strong>
-                    
-                    <div>
-                        <p>Revisitée</p>
-                        <span>22€</span>
-                    </div>
-                    
-                    <div class="checkBox">
-                        <i class="fa-solid fa-circle-check"></i>
-                    </div>
-                </input>
 
-                <label for="dessert3">Tiramisu</label>
+                        <label for="dessert2">
+                            <b>crème brulée</b>
 
-                <input type="radio" id="starter2">
-                    <strong>Tiramisu</strong>
-                    
-                    <div>
-                        <p>A la noisette</p>
-                        <span>23€</span>
-                    </div>
-                    
-                    <div class="checkBox">
-                        <i class="fa-solid fa-circle-check"></i>
-                    </div>
-                </input>
+                            <span>
+                                <span>Revisitée</span>
+
+                                <span>22€</span>
+                            </span>
+
+                            <i class="fa-solid fa-circle-check"></i>
+                        </label>
+                        <input type="radio" id="dessert2" value="dessert2" name="dessert">
+
+
+                                <label for="dessert3">
+                                    <b>Tiramisu</b>
+
+                                    <span>
+                                        <span>A la noisette</span>
+
+                                        <span>23€</span>
+                                    </span>
+                                
+                                    <i class="fa-solid fa-circle-check"></i>
+                                </label>
+                                <input type="radio" id="dessert3" value="dessert3" name="dessert">
             </fieldset>
-
+            
             <button>Commander</button>
         </form>
     </main>
@@ -179,25 +166,17 @@
         <h1>ohmyfood</h1>
         
         <nav>
-            <a>
-                <i class="fa-solid fa-utensils"></i>
-
-                <p>Proposer un restaurant</p>
+            <a href="#">
+                <i class="fa-solid fa-utensils"></i>Proposer un restaurant
             </a>
 
-            <a>
-                <i class="fa-solid fa-handshake-angle"></i>
-
-                <p>Devenir partenaire</p>
+            <a href="#">
+                <i class="fa-solid fa-handshake-angle"></i>Devenir partenaire
             </a>
 
-            <li>
-                <p>Mentions légales</p>
-            </a>
+            <a href="#">Mentions légales</a>
 
-            <a>
-                <p>Contact</p>
-            </a>
+            <a href="#">Contact</a>
         </nav>
     </footer>
 </body>
