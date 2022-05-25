@@ -1,3 +1,24 @@
-html{
-    font-size: 62.5%;
-}
+/*----- abstracts -----*/
+
+        @import './abstracts/dev-classes.scss';
+        @import './abstracts/breakpoints.scss';
+        @import './abstracts/reset.scss';
+        @import './abstracts/variables.scss';
+
+/*----- base -----*/
+
+        @import './base/fonts.scss';
+        @import './base/flex-classes.scss';
+        @import './base/styling-classes.scss';
+
+/*----- layout -----*/
+
+        @import './layout/header.scss';
+        
+/*----- pages -----*/
+
+        @import './pages/home.scss'
+
+
+
+

@@ -1,0 +1,102 @@
+@import '../components/card.scss';
+
+.section-intro{
+    width: 100%;
+    padding: 50px 10px;
+    display: grid;
+    place-items: center;
+    background-color: $gray;
+
+    h2{
+        font-size: 28px;
+        /* padding: 0px 15px; */
+        text-align: center;
+    }
+
+    p{
+        font-size: 22px;
+        font-weight: 300;
+        padding: 20px max(5vw, 15px) 0 max(5vw, 15px);
+        text-align: center;
+    }
+
+    button{
+        font-size: 20px;
+        color: white;
+        background: linear-gradient(180deg, rgba(255,121,218,1) 0%, rgba(147,86,220,1) 97%);;
+        padding: 18px 30px;
+        border-radius: 50px;
+        border: 0;
+        margin-top: 35px;
+        cursor: pointer;
+    }
+}
+
+
+.section-tuto{
+    width: 100%;
+    padding: 50px 25px 50px 40px;
+
+    h2{
+        font-size: 28px;
+    }
+
+    ol{
+        list-style: none;
+
+        li{
+            background-color: $gray;
+            font-size: 18px;
+            font-weight: 500;
+            padding: 30px 40px;
+            border-radius: 25px;
+            margin-top: 40px;
+            box-shadow: $shadow;
+            position: relative;
+            transition: background-color 300ms;
+            display: flex;
+            align-items: center;
+
+            i{
+                /* font-size: 20px; */
+                color: $darkgray;
+                transition: all 300ms;
+                margin-right: 20px;
+            }
+
+            .number{
+                width: 30px;
+                height: 30px;
+                color: white;
+                font-size: 18px;
+                font-weight: 400;
+                background-color: $purple;
+                border-radius: 50%;
+                position: absolute;
+                top: 50%;
+                left: 0;
+                transform: translate(-50%, -50%);
+                display: grid;
+                place-items: center;
+            }
+        }
+        .section2 > ol > li:hover {
+            background-color: $lightpink;
+        }
+        .section2 > ol > li:hover > i{
+            color: $purple;
+        }
+    }
+}
+
+.section-restaurants{
+    width: 100%;
+    background-color: var(--gray);
+    padding: 60px 20px;
+
+    .section3 > h2{
+        font-size: 28px;
+        font-weight: 800;
+    }
+}
+

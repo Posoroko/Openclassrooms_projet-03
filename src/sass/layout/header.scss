@@ -1,0 +1,32 @@
+header{
+    width: 100%;
+    font-family: "Shrikhand";
+
+    h1{
+        width: 100%;
+        padding: 15px 0 10px 0;
+        box-shadow: $shadow;
+        display: grid;
+        place-items: center;
+        z-index: 10;
+        position: relative;
+    }
+    
+    div{
+        width: 100%;
+        background-color: $gray;
+        padding: 18px 0;
+        display: flex;
+        justify-content: center;
+
+        i{
+            font-size: 20px;
+            margin-right: 18px;
+        }
+
+        a{
+            font-size: 19px;
+            font-weight: 500;
+        }
+    }
+}
