@@ -48,6 +48,8 @@ main{
 
     &__list{
         list-style: none;
+        display: flex;
+        
 
         &__item{
             background-color: $gray;
@@ -77,8 +79,7 @@ main{
                 background-color: $purple;
                 border-radius: 50%;
                 position: absolute;
-                top: 50%;
-                left: 0;
+
                 transform: translate(-50%, -50%);
                 display: grid;
                 place-items: center;
@@ -90,6 +91,37 @@ main{
             i{
                 color: $purple;
             }
+        }
+
+    }
+}
+@media (max-width: 899px) {
+    .section-tuto__list{
+        flex-direction: column;
+        align-items: center;
+        & li{
+            width: min(100%, 450px);
+            & .number{
+                top: 50%;
+                left: 0%;
+            }
+
+        }
+    }
+}
+@media (min-width: 900px) {
+    .section-tuto__list{
+        flex-direction: row;
+        justify-content: space-between;
+
+        & li{
+            width: 30%;
+
+            & .number{
+                top: 0%;
+                left: 50%;
+            }
+
         }
 
     }
