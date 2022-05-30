@@ -1,54 +1,89 @@
-.section-Restaurant__card{
-    width: 100%;
+// .card{
+//     width: min(100%, 450px);
+//     height: 300px;
+//     background-color: white;
+//     border-radius: $cardradius;
+//     margin: 20px 10px 0 10px;
+//     overflow: hidden;
+//     box-shadow: $shadow;
+//     display: block;
+//     position: relative;
+
+//     &__image-box{
+//         width: 100%;
+//         height: 100%;
+//         display: flex;
+//         flex-direction: column;
+
+//         &__image{
+//             width: 100%;
+//             height: 100%;
+//             object-fit: cover;
+//         }
+
+//         &__caption-box{
+//             padding: 20px 10px;
+//             position: relative;
+//         }
+//     }
+    
+ 
+//     &__nouveau{
+//         font-size: 15px;
+//         font-weight: 500;
+//         color: #3b8567;
+//         background-color: $teal;                    
+//         padding: 7px 15px;
+//         border-radius: 5px;
+//         margin: 10px;
+//         position: absolute;
+//         top: 0;
+//         right: 0;
+//         z-index: 100000;
+//     }
+// }
+
+.section-restaurants > .card{
+    width: min(100%, 450px);
     height: 300px;
     background-color: white;
     border-radius: $cardradius;
-    margin-top: 20px;
+    margin: 20px 10px 0 10px;
     overflow: hidden;
     box-shadow: $shadow;
     display: block;
     position: relative;
 
-    figure{
+    & .image-box{
         width: 100%;
         height: 100%;
         display: flex;
         flex-direction: column;
-        
-        img{
+
+        & .image{
             width: 100%;
             height: 100%;
             object-fit: cover;
         }
 
-        figcaption{
+        & .caption-box{
             padding: 20px 10px;
             position: relative;
-            pointer-events: none;
-        }
-
-        .fa-heart{
-            font-size: 25px;
-            position: absolute;
-            top: 0;
-            right: 0;
-            bottom: 0;
-            display: grid;
-            place-items: center;
-            margin: 20px;
         }
     }
-
-    .nouveau{
+    
+ 
+    & .nouveau{
         font-size: 15px;
         font-weight: 500;
         color: #3b8567;
-        background-color: $teal;
+        background-color: $teal;                    
         padding: 7px 15px;
         border-radius: 5px;
         margin: 10px;
         position: absolute;
         top: 0;
         right: 0;
+        z-index: 100000;
     }
 }

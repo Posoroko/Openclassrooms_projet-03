@@ -1,26 +1,31 @@
 @import '../components/card.scss';
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 .section-intro{
     width: 100%;
     padding: 50px 10px;
     display: grid;
     place-items: center;
-    background-color: $gray;
+    background-color: $gray1;
 
-    h2{
+    .section-intro__title{
         font-size: 28px;
         /* padding: 0px 15px; */
         text-align: center;
     }
 
-    p{
+    .section-intro__slogan{
         font-size: 22px;
         font-weight: 300;
         padding: 20px max(5vw, 15px) 0 max(5vw, 15px);
         text-align: center;
     }
 
-    button{
+    .section-intro__button{
         font-size: 20px;
         color: white;
         background: linear-gradient(180deg, rgba(255,121,218,1) 0%, rgba(147,86,220,1) 97%);;
@@ -34,17 +39,17 @@
 
 
 .section-tuto{
-    width: 100%;
+    width: min(100%, 1000px);
     padding: 50px 25px 50px 40px;
 
-    h2{
+    &__title{
         font-size: 28px;
     }
 
-    ol{
+    &__list{
         list-style: none;
 
-        li{
+        &__item{
             background-color: $gray;
             font-size: 18px;
             font-weight: 500;
@@ -57,14 +62,13 @@
             display: flex;
             align-items: center;
 
-            i{
-                /* font-size: 20px; */
-                color: $darkgray;
+            &__icon{
+                color: $gray3;
                 transition: all 300ms;
                 margin-right: 20px;
             }
 
-            .number{
+            &__number{
                 width: 30px;
                 height: 30px;
                 color: white;
@@ -80,23 +84,49 @@
                 place-items: center;
             }
         }
-        .section2 > ol > li:hover {
+        &__item:hover {
             background-color: $lightpink;
+
+            i{
+                color: $purple;
+            }
         }
-        .section2 > ol > li:hover > i{
-            color: $purple;
-        }
+
     }
 }
 
+// .section-restaurants{
+//     width: min(100%, 1000px);
+//     background-color: var(--gray);
+//     padding: 60px 20px;
+//     display: flex;
+//     flex-wrap: wrap;
+//     justify-content: center;
+
+//     /*restaurant card imported at page top */
+
+//     &__title{
+//         width: 100%;
+//         font-size: 28px;
+//         font-weight: 800;
+//     }
+
+// }
+
 .section-restaurants{
-    width: 100%;
+    width: min(100%, 1000px);
     background-color: var(--gray);
     padding: 60px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 
-    .section3 > h2{
+    /*restaurant card imported at page top */
+
+    & > .title{
+        width: 100%;
         font-size: 28px;
         font-weight: 800;
     }
-}
 
+}

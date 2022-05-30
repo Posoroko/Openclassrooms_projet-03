@@ -4,155 +4,227 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/styles/main.css">
     <link rel="stylesheet" href="./css/main.css">
-    <!-- <link rel="stylesheet" href="assets/styles/small.css" media="screen and (max-width: 449px)"> -->
-    <!-- <link rel="stylesheet" href="assets/styles/medium.css" media="screen and (min-width: 450px) and (max-width: 999px)">
-    <link rel="stylesheet" href="assets/styles/large.css" media="screen and (min-width: 1000px)"> -->
     <script src="https://kit.fontawesome.com/218c86a2c1.js" crossorigin="anonymous" defer></script>
     <title>ohmyfood | Commande de repas en ligne</title>
 </head>
 <body>
-    <header class="center">
-        <h1 class="shrikhand">ohmyfood</h1>
+    <header class="center header">
+        <h1 class="shrikhand header__title">ohmyfood</h1>
 
-        <div>
-            <i class="fa-solid fa-location-dot"></i>
+        <div class="header__gps-box">
+            <i class="fa-solid fa-location-dot header__gps-box__icon"></i>
 
-            <a href="geo:37.786971,-122.399677;">Paris, Belleville</a>
+            <a class="header__gps-box__gps" href="geo:37.786971,-122.399677;">Paris, Belleville</a>
         </div>
     </header>
 
     <main>
         <section class="section1 section-intro">
-            <h2>Réservez le menu qui vous convient</h2>
+            <h2 class="section-intro__title">Réservez le menu qui vous convient</h2>
 
-            <p>Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
+            <p class="section-intro__slogan">Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
 
-            <button>Explorez nos restaurants</button>
+            <button class="section-intro__button">Explorez nos restaurants</button>
         </section>
     
         <section class="section2 section-tuto">
-            <h2>Fonctionnement</h2>
+            <h2 class="section-tuto__title">Fonctionnement</h2>
 
-            <ol>
-                <li>
-                    <i class="fa-solid fa-mobile-screen-button"></i>
+            <ol class="section-tuto__list">
+                <li class="section-tuto__list__item">
+                    <i class="fa-solid fa-mobile-screen-button section-tuto__list__item__icon"></i>
 
-                    <span>Choisissez un restaurant</span>
+                    <span class="section-tuto__list__item__text">Choisissez un restaurant</span>
 
-                    <span class="number">1</span>
+                    <span class="number section-tuto__list__item__number">1</span>
                 </li>
-                <li>
-                    <i class="fa-solid fa-list-ul"></i>
+                <li class="section-tuto__list__item">
+                    <i class="fa-solid fa-list-ul section-tuto__list__item__icon"></i>
 
-                    <span>Composez votre menu</span>
+                    <span class="section-tuto__list__item__text">Composez votre menu</span>
 
-                    <span class="number">2</span>
+                    <span class="number section-tuto__list__item__number">2</span>
                 </li>
-                <li>
-                    <i class="fa-solid fa-store"></i>
+                <li class="section-tuto__list__item">
+                    <i class="fa-solid fa-store section-tuto__list__item__icon"></i>
 
-                    <span>Dégustez au restaurant</span>
+                    <span class="section-tuto__list__item__text">Dégustez au restaurant</span>
 
-                    <span class="number">3</span>
+                    <span class="number section-tuto__list__item__number">3</span>
                 </li>
             </ol>
         </section>
 
-        <section class="section3 section-restaurants">
-                <h2 class="sectionRestaurants__title">Restaurants</h2>
+        <section class="section-restaurants">
+                <h2 class="title">Restaurants</h2>
 
-                <a href="pages/la_palette_du_goût.html" class="restaurantCard section-Restaurant__card">
-                    <figure>
-                        <img src="assets/images/restaurants/la_palette_du_gout.jpg" alt="Restaurant La palette du gout">
+                <a href="pages/la_palette_du_goût.html" class="card">
+                    <figure class="image-box">
+                        <img class="image" src="assets/images/restaurants/la_palette_du_gout.jpg" alt="Restaurant La palette du gout">
 
-                        <figcaption>
-                            <h2>La palette du goût</h2>
+                        <figcaption class="caption-box">
+                            <h2 class="title">La palette du goût</h2>
     
-                            <span>Ménilmontant</span>
+                            <span class="city">Ménilmontant</span>
     
-                            <!-- <i class="fa-solid fa-heart"></i> -->
-                            <i class="fa-regular fa-heart"></i>
+                            <div class="heart-box">
+                                <div class="heart"></div>
+                            </div>
+
                             
                         </figcaption>
                     </figure>
                     <span class="nouveau">Nouveau</span>           
                 </a>
 
-                <a href="la_note_enchantée.html" class="restaurantCard section-Restaurant__card">
-                    <figure>
-                        <img src="assets/images/restaurants/la_note_enchantee.jpg" alt="Restaureant La note enchantée">
+                <a href="pages/la_palette_du_goût.html" class="card">
+                    <figure class="image-box">
+                        <img class="image" src="assets/images/restaurants/la_note_enchantee.jpg" alt="Restaurant La palette du gout">
 
-                        <figcaption>
-                            <h2>La note enchantée</h2>
+                        <figcaption class="caption-box">
+                            <h2 class="title">La note enchantée</h2>
     
-                            <span>Charonne</span>
+                            <span class="city">Charonne</span>
     
-                            <i class="fa-solid fa-heart"></i>
+                            <div class="heart-box">
+                                <div class="heart"></div>
+                            </div>
+                            
                         </figcaption>
                     </figure>
-
-                    <span class="nouveau">Nouveau</span>   
+                    <span class="nouveau">Nouveau</span>           
                 </a>
 
-                <a href="a_la_francaise.html" class="restaurantCard section-Restaurant__card">
-                    <figure>
-                        <img src="assets/images/restaurants/a_la_francaise.jpg" alt="Restaurant A la française">
+                <a href="pages/la_palette_du_goût.html" class="card">
+                    <figure class="image-box">
+                        <img class="image" src="assets/images/restaurants/a_la_francaise.jpg" alt="Restaurant La palette du gout">
 
-                        <figcaption>
-                            <h2>A la française</h2>
+                        <figcaption class="caption-box">
+                            <h2 class="title">A la française</h2>
     
-                            <span>Cité Rouge</span>
+                            <span class="city">Cité Rouge</span>
+    
+                            <div class="heart-box">
+                                <div class="heart"></div>
+                            </div>
+                            
+                        </figcaption>
+                    </figure>     
+                </a>
+
+                <a href="pages/la_palette_du_goût.html" class="card">
+                    <figure class="image-box">
+                        <img class="image" src="assets/images/restaurants/la_palette_du_gout.jpg" alt="Restaurant La palette du gout">
+
+                        <figcaption class="caption-box">
+                            <h2 class="title">Le délice des sens</h2>
+    
+                            <span class="city">Folie-Méricourt</span>
+    
+                            <div class="heart-box">
+                                <div class="heart"></div>
+                            </div>
+                            
+                        </figcaption>
+                    </figure>     
+                </a>
+
+                <!-- <a href="pages/la_palette_du_goût.html" class="section-restaurants__card">
+                    <figure class="section-restaurants__card__image-box">
+                        <img class="section-restaurants__card__image-box__image" src="assets/images/restaurants/la_palette_du_gout.jpg" alt="Restaurant La palette du gout">
+
+                        <figcaption class="section-restaurants__card__image-box__caption-box">
+                            <h2 class="section-restaurants__card__image-box__caption-box__title">La palette du goût</h2>
+    
+                            <span class="section-restaurants__card__image-box__caption-box__city">Ménilmontant</span>
+    
+                            <div class="heart-box">
+                                <div class="heart"></div>
+                            </div>
+
+                            
                         </figcaption>
                     </figure>
-                </a>
+                    <span class="section-restaurants__card__nouveau">Nouveau</span>           
+                </a> -->
 
-                <a href="le_delice_des_sens.html" class="restaurantCard section-Restaurant__card">
-                    <figure>
-                        <img src="assets/images/restaurants/le_delice_des_sens.jpg" alt="Restaurant Le délice des sens">
+                <!-- <a href="pages/la_palette_du_goût.html" class="section-restaurants__card">
+                    <figure class="section-restaurants__card__image-box">
+                        <img class="section-restaurants__card__image-box__image" src="assets/images/restaurants/la_note_enchantee.jpg" alt="Restaurant La palette du gout">
 
-                        <figcaption>
-                            <h2>Le délice des sens</h2>
+                        <figcaption class="section-restaurants__card__image-box__caption-box">
+                            <h2 class="section-restaurants__card__image-box__caption-box__title">La note enchantée</h2>
     
-                            <span>Ménilmontant</span>
+                            <span class="section-restaurants__card__image-box__caption-box__city">Charonne</span>
     
-                            <i class="fa-solid fa-heart"></i>
+                            <div class="section-restaurants__card__image-box__caption-box__icon"></div>
+                            
                         </figcaption>
-                    </figure>                    
+                    </figure>
+                    <span class="section-restaurants__card__nouveau">Nouveau</span>           
                 </a>
+
+                <a href="pages/la_palette_du_goût.html" class="section-restaurants__card">
+                    <figure class="section-restaurants__card__image-box">
+                        <img class="section-restaurants__card__image-box__image" src="assets/images/restaurants/a_la_francaise.jpg" alt="Restaurant La palette du gout">
+
+                        <figcaption class="section-restaurants__card__image-box__caption-box">
+                            <h2 class="section-restaurants__card__image-box__caption-box__title">A la française</h2>
+    
+                            <span class="section-restaurants__card__image-box__caption-box__city">Cité Rouge</span>
+    
+                            <div class="section-restaurants__card__image-box__caption-box__icon"><div>
+                            
+                        </figcaption>
+                    </figure>     
+                </a>
+
+                <a href="pages/la_palette_du_goût.html" class="section-restaurants__card">
+                    <figure class="section-restaurants__card__image-box">
+                        <img class="section-restaurants__card__image-box__image" src="assets/images/restaurants/la_palette_du_gout.jpg" alt="Restaurant La palette du gout">
+
+                        <figcaption class="section-restaurants__card__image-box__caption-box">
+                            <h2 class="section-restaurants__card__image-box__caption-box__title">Le délice des sens</h2>
+    
+                            <span class="section-restaurants__card__image-box__caption-box__city">Folie-Méricourt</span>
+    
+                            <div class="section-restaurants__card__image-box__caption-box__icon"></div>
+                            
+                        </figcaption>
+                    </figure>     
+                </a> -->
+
+                    
+                    <div class="heart-box">
+                        <div class="heart"></div>
+                    </div>
+                    
+
         </section>
     </main>
 
-    <footer>
-        <h3>ohmyfood</h3>
+    <footer class="footer">
+        <h3 class="footer__title">ohmyfood</h3>
         
-        <nav>
-            <ul>
-                <li>
-                    <i class="fa-solid fa-utensils"></i>
-                    <a href="">Proposer un restaurant</a>
-                </li>
-                <li><a href=""></a></li>
-                <li><a href=""></a></li>
-                <li><a href=""></a></li>
-                <li></li>
-            </ul>
-     
+        <nav class="footer__nav-box">
+                <a class="footer__nav-box__link">
+                    <i class="fa-solid fa-utensils footer__nav-box__link__icon"></i>
+                    <b class="footer__nav-box__list__link" href="">Proposer un restaurant</b>
+                </a>
+                
+                <a class="footer__nav-box__link">
+                    <i class="fa-solid fa-handshake-angle footer__nav-box__link__icon"></i>
+                    <b class="footer__nav-text" href="">Devenir partenaire</b>
+                </a>
+                
+                <a class="footer__nav-box__link">
+                    <b class="footer__nav-text" href="">Mentions légales</b>
+                </a>
 
-            <a>
-                <i class="fa-solid fa-handshake-angle"></i>
-
-                <p>Devenir partenaire</p>
-            </a>
-
-            <a>
-                <p>Mentions légales</p>
-            </a>
-
-            <a>
-                <p>Contact</p>
-            </a>
+                <a class="footer__nav-box__link">
+                    <b class="footer__nav-text" href="">Contact</b>
+                </a>
         </nav>
     </footer>
 </body>

@@ -25,6 +25,18 @@
             place-items: center;
         }
 
+        .card {
+            width: 100%;
+
+            &--orange {
+                background-color: orange;
+            }
+
+            &--blue{
+                background-color: blue;
+            }
+        } 
+
 /*-- mouse styles --*/
         .pointer{
             cursor: pointer;

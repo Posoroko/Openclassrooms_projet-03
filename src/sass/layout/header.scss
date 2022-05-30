@@ -1,8 +1,8 @@
-header{
+.header{
     width: 100%;
     font-family: "Shrikhand";
 
-    h1{
+    .header__title{
         width: 100%;
         padding: 15px 0 10px 0;
         box-shadow: $shadow;
@@ -12,9 +12,9 @@ header{
         position: relative;
     }
     
-    div{
+    .header__gps-box{
         width: 100%;
-        background-color: $gray;
+        background-color: $gray2;
         padding: 18px 0;
         display: flex;
         justify-content: center;
