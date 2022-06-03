@@ -43,7 +43,7 @@
 //     }
 // }
 
-.section-restaurants > .card{
+.section-restaurants .card{
     width: min(100%, 450px);
     height: 300px;
     background-color: white;
@@ -70,12 +70,14 @@
             padding: 20px 10px;
             position: relative;
 
-            
+            & .heart-box{
+                bottom: 50%;
+                right: 25px;
+                transform: translateY(50%);
+            }
         }
-
     }
-    
- 
+
     & .nouveau{
         font-size: 15px;
         font-weight: 500;
@@ -90,6 +92,5 @@
         z-index: 100000;
     }
 }
-.heart-red{
-    color: red;
-}
+
+

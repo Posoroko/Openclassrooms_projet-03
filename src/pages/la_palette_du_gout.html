@@ -4,179 +4,167 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="main.css">
-    <link rel="stylesheet" href="assets/styles/restaurant.css">
-    <title>A la française</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <title>La palette du goût | ohmyfood</title>
 </head>
 <body>
-    <header>
-        <i>arrow_left</i>
+    <header class="header">
+        <div class="title-box">
+            <h1 class="header__title">
+                <a href="../index.html" class="arrow-back"><i class="arrow-back">arrow_back</i> </a>
+                ohmyfood
+            </h1>
+        </div>
 
-        <h1 class="shrikhand">ohmyfood</h1>
+        <figure class="header__image-box">
+            <img src="../assets/images/restaurants/la_palette_du_gout.jpg" alt="">
+            <div class="bottom-stripe">
+                <h1 class="restaurant-name">
+                    La palette du goût
 
-        <img src="assets/images/restaurants/à_la_française.jpg" alt="">
+                    <div class="heart-box">
+                        <div class="plein">
+            
+                        </div>
+                        <div class="vide">
+            
+                        </div>
+                    </div>
+                </h1>
+                
+            </div>
+        </figure>
     </header>
-    <main>
-        <h1 class="shrikhand">La palette du goût<i class="fa-solid fa-heart"></i></h1>
+    <main class="restaurant__main">
+        
 
-        <form>
-            <fieldset>
+        <form class="menu">
+            <fieldset class="menu__fieldset">
                 <legend>ENTREES</legend>
 
                 <div class="line"></div>
 
-                <label for="starter1">
-                    <b>Fricassée d'escargot</b>
+                <label class="menu-option" for="starter1">
+                    <stron>Fricassée d'escargot</strong>
 
-                    <span>
-                        <span>Au piment d'espelette</span>
-
-                        <span>25€</span>
-                    </span>
-
+                        <span class="menu-option__more-info"><span class="dish">Au piment d'espelette avec des </span><span class="price">25€</span> </span>
+                        
                     <i class="fa-solid fa-circle-check"></i>
                 </label>
-                <input type="radio" id="starter1" value="starter1" name="starter">
+                <input type="radio" id="starter1" value="starter1" name="starter" class="hiden-radio-button"> 
 
-                        <label for="starter2">
-                            <b>oie gras de canard mi-cuit</b>
+                        <label class="menu-option" for="starter2">
+                            <b>Foie gras de canard mi-cuit</b>
                             
-                            <span>
-                                <span>Et ses cpêaux de truffe noire</span>
+                            <span class="menu-option__more-info">Et ses cpêaux de truffe noire <span class="price">35€</span></span>
 
-                                <span>35€</span>
-                            </span>
-                        
                             <i class="fa-solid fa-circle-check"></i>
                         </label>
-                        <input type="radio" id="starter2" value="starter2" name="starter">
+                        <input type="radio" id="starter2" value="starter2" name="starter" class="hiden-radio-button">
 
-                                <label for="starter3">
+                                <label class="menu-option" for="starter3">
                                     <b>Oeuf au plat</b>
-                                    
-                                    <span>
-                                        <span>Assaisonné à la truffe sur lit de...</span>
 
-                                        <span>20€</span>
-                                    </span>
+                                        <span class="menu-option__more-info"><span class="dish">Assaisonné à la truffe sur lit de banane</span><span class="price" class="price">20€</span></span>
 
                                     <i class="fa-solid fa-circle-check"></i>
                                 </label>
-                                <input type="radio" id="starter3" value="starter3" name="starter">
+                                <input type="radio" id="starter3" value="starter3" name="starter" class="hiden-radio-button">
             </fieldset> 
 
-            <fieldset>
+            <fieldset class="menu__fieldset">
                 <legend>PLATS</legend>
 
                 <div class="line"></div>
 
-                <label for="main1">
+                <label class="menu-option" for="main1">
                     <b>Filet de boeuf aux herbes</b>
-                    
-                    <span>
-                        <span>Accompagnés de sa ribambelle de légu...</span>
 
-                        <span>40€</span>
-                    </span>
+                        <span class="menu-option__more-info">Accompagnés de sa ribambelle de légmes<span class="price">40€</span></span>
 
                     <i class="fa-solid fa-circle-check"></i>
                 </label>
-                <input type="radio" id="main1" value="main1" name="main">
+                <input type="radio" id="main1" value="main1" name="main" class="hiden-radio-button">
 
 
-                        <label for="main2">
+                        <label class="menu-option" for="main2">
                             <b>Parmentier de queue de boeuf</b>
-                            
-                            <span>
-                                <span>A la truffe noire sur sa purée de panais</span>
 
-                                <span>35€</span>
-                            </span>
+                                <span class="menu-option__more-info">A la truffe noire sur sa purée de panais<span class="price">35€</span></span>
                             
                             <i class="fa-solid fa-circle-check"></i>
                         </label>
-                        <input type="radio" id="main2" value="main2" name="main">
+                        <input type="radio" id="main2" value="main2" name="main" class="hiden-radio-button">
 
-                                <label for="main3">
+                                <label class="menu-option" for="main3">
                                     <b>Filet de turbot</b>
-                                    
-                                    <span>
-                                        <span>Aux agrumes</span>
 
-                                        <span>44€</span>
-                                    </span>
+                                        <span class="menu-option__more-info">Aux agrumes<span class="price">44€</span></span>
 
                                     <i class="fa-solid fa-circle-check"></i>
                                 </label>
-                                <input type="radio" id="main3" value="main3" name="main">
+                                <input type="radio" id="main3" value="main3" name="main" class="hiden-radio-button">
             </fieldset> 
 
-            <fieldset>
+            <fieldset class="menu__fieldset">
                 <legend>DESSERTS</legend>
 
                 <div class="line"></div>
 
-                <label for="dessert1">
+                <label class="menu-option" for="dessert1">
                     <b>Paris-Brest</b>
-    
-                    <span>
-                        <span>Revisité</span>
 
-                        <span>18€</span>
-                    </span>
+                        <span class="menu-option__more-info">Revisité<span class="price">23€</span></span>
 
                     <i class="fa-solid fa-circle-check"></i>
                 </label>
-                <input type="radio" id="dessert1" value="dessert1" name="dessert">
+                <input type="radio" id="dessert1" value="dessert1" name="dessert" class="hiden-radio-button">
 
 
-                        <label for="dessert2">
+                        <label class="menu-option" for="dessert2">
                             <b>Baba au rhum revisité</b>
 
-                            <span>
-                                <span>Et glace à la vanille de Madagascar</span>
-
-                                <span>22€</span>
-                            </span>
+                                <span class="menu-option__more-info">Et glace à la vanille de Madagascar<span class="price">23€</span></span>
 
                             <i class="fa-solid fa-circle-check"></i>
                         </label>
-                        <input type="radio" id="dessert2" value="dessert2" name="dessert">
+                        <input type="radio" id="dessert2" value="dessert2" name="dessert" class="hiden-radio-button">
 
-
-                                <label for="dessert3">
+                                <label class="menu-option" for="dessert3">
                                     <b>Mousse au chocolat</b>
 
-                                    <span>
-                                        <span>Au piment d'espelette et à la truffe noire</span>
-
-                                        <span>23€</span>
-                                    </span>
+                                        <span class="menu-option__more-info">Au piment d'espelette et à la truffe noire<span class="price">23€</span></span>
                                 
                                     <i class="fa-solid fa-circle-check"></i>
                                 </label>
-                                <input type="radio" id="dessert3" value="dessert3" name="dessert">
+                                <input type="radio" id="dessert3" value="dessert3" name="dessert" class="hiden-radio-button">
             </fieldset>
             
             <button>Commander</button>
         </form>
     </main>
 
-    <footer>
-        <h1>ohmyfood</h1>
+    <footer class="footer">
+        <h3 class="footer__title">ohmyfood</h3>
         
-        <nav>
-            <a href="#">
-                <i class="fa-solid fa-utensils"></i>Proposer un restaurant
-            </a>
+        <nav class="footer__nav-box">
+                <a class="footer__nav-box__link">
+                    <i class="fa-solid fa-utensils footer__nav-box__link__icon"></i>
+                    <b class="footer__nav-box__list__link" href="">Proposer un restaurant</b>
+                </a>
+                
+                <a class="footer__nav-box__link">
+                    <i class="fa-solid fa-handshake-angle footer__nav-box__link__icon"></i>
+                    <b class="footer__nav-text" href="">Devenir partenaire</b>
+                </a>
+                
+                <a class="footer__nav-box__link">
+                    <b class="footer__nav-text" href="">Mentions légales</b>
+                </a>
 
-            <a href="#">
-                <i class="fa-solid fa-handshake-angle"></i>Devenir partenaire
-            </a>
-
-            <a href="#">Mentions légales</a>
-
-            <a href="#">Contact</a>
+                <a class="footer__nav-box__link">
+                    <b class="footer__nav-text" href="">Contact</b>
+                </a>
         </nav>
     </footer>
 </body>

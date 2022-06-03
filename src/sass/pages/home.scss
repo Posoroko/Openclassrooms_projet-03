@@ -12,9 +12,8 @@ main{
     place-items: center;
     background-color: $gray1;
 
-    .section-intro__title{
+    &__title{
         font-size: 28px;
-        /* padding: 0px 15px; */
         text-align: center;
     }
 
@@ -28,7 +27,7 @@ main{
     .section-intro__button{
         font-size: 20px;
         color: white;
-        background: linear-gradient(180deg, rgba(255,121,218,1) 0%, rgba(147,86,220,1) 97%);;
+        background: $pinkpurplegradient;
         padding: 18px 30px;
         border-radius: 50px;
         border: 0;
@@ -39,12 +38,8 @@ main{
 
 
 .section-tuto{
-    width: min(100%, 1000px);
-    padding: 50px 25px 50px 40px;
-
-    &__title{
-        font-size: 28px;
-    }
+    width: $mainwidth;
+    padding: 50px 25px 50px 25px;
 
     &__list{
         list-style: none;
@@ -146,7 +141,7 @@ main{
 // }
 
 .section-restaurants{
-    width: min(100%, 1000px);
+    width: $mainwidth;
     background-color: var(--gray);
     padding: 60px 20px;
     display: flex;
