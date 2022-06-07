@@ -1,4 +1,8 @@
 @import '../components/card.scss';
+html{
+    overflow-x: hidden;
+}
+
 main{
     display: flex;
     flex-direction: column;

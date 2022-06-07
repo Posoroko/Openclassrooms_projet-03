@@ -11,8 +11,11 @@
         $gray3: #353535;
 
         $pinkpurplegradient: linear-gradient(180deg, rgba(255,121,218,1) 0%, rgba(147,86,220,1) 97%);
+        $horizontalgradient: linear-gradient(0deg, rgba(147,86,220,1) 0%, rgba(255,121,218,1) 100%);
 
-        $mainwidth: min(100%, 1000px);
+
+        $mainwidth: 100%;
+        // $mainwidth: min(100%, 1200px);
 
 /*----- shadows -----*/
         
@@ -24,3 +27,6 @@
         $cardradius: 20px;
         $innerRadius20: 20px;
 
+/*----- animations -----*/
+
+        $checkbox: width 500ms ease-in-out;
