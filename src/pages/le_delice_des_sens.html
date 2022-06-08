@@ -4,162 +4,168 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="main.css">
-    <link rel="stylesheet" href="assets/styles/restaurant.css">
-    <title>Menu | Restaurant A la française</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <title>Menu | Le délice des sens</title>
 </head>
 <body>
-    <header>
-        <i>arrow_left</i>
+    <header class="header">
+        <div class="title-box">
+            <h1 class="header__title">
+                <a href="../index.html" class="arrow-back"><i class="arrow-back">arrow_back</i> </a>
+                ohmyfood
+            </h1>
+        </div>
+        
+        <figure class="header__image-box">
+            <img src="../assets/images/restaurants/le_delice_des_sens.jpg" alt="">
+            <div class="bottom-stripe">
+                <h1 class="restaurant-name">
+                    Le délice des sens
 
-        <h1>ohmyfood</h1>
-
-        <img src="assets/images/restaurants/à_la_française.jpg" alt="">
-    </header>
-    <main>
-        <h1 class="shrikhand">Le délice des sens<i class="fa-solid fa-heart"></i></h1>
-
-        <form>
-            <fieldset>
-                <legend>ENTREES</legend>
-
-                <div class="line"></div>
-
-                <label for="starter1">
-                    <b>Tartare de thon</b>
-
-                    <span>
-                        <span>Assaisonné au yuzu</span>
-
-                        <span>25€</span>
-                    </span>
-
-                    <i class="fa-solid fa-circle-check"></i>
-                </label>
-                <input type="radio" id="starter1" value="starter1" name="starter">
-
-                        <label for="starter2">
-                            <b>Bouchée de homard croustillant</b>
-                            
-                            <span>
-                                <span>Et sa farandole de petits légumes</span>
-
-                                <span>35€</span>
-                            </span>
-                        
-                            <i class="fa-solid fa-circle-check"></i>
-                        </label>
-                        <input type="radio" id="starter2" value="starter2" name="starter">
-
-                                <label for="starter3">
-                                    <b>Velouté de cèpes</b>
-                                    
-                                    <span>
-                                        <span>Aux truffes</span>
-
-                                        <span>20€</span>
-                                    </span>
-
-                                    <i class="fa-solid fa-circle-check"></i>
-                                </label>
-                                <input type="radio" id="starter3" value="starter3" name="starter">
-            </fieldset> 
-
-            <fieldset>
-                <legend>PLATS</legend>
-
-                <div class="line"></div>
-
-                <label for="main1">
-                    <b>Poulet rôti aux herbes de provence</b>
-                    
-                    <span>
-                        <span>Et sa crème de truffe</span>
-
-                        <span>40€</span>
-                    </span>
-
-                    <i class="fa-solid fa-circle-check"></i>
-                </label>
-                <input type="radio" id="main1" value="main1" name="main">
-
-
-                        <label for="main2">
-                            <b>Langoustine rôtie</b>
-                            
-                            <span>
-                                <span>Et ses légumes de saison</span>
-
-                                <span>35€</span>
-                            </span>
-                            
-                            <i class="fa-solid fa-circle-check"></i>
-                        </label>
-                        <input type="radio" id="main2" value="main2" name="main">
-
-                                <label for="main3">
-                                    <b>Côte de boeuf angus</b>
-                                    
-                                    <span>
-                                        <span>Et sa purée de panais</span>
-
-                                        <span>44€</span>
-                                    </span>
-
-                                    <i class="fa-solid fa-circle-check"></i>
-                                </label>
-                                <input type="radio" id="main3" value="main3" name="main">
-            </fieldset> 
-
-            <fieldset>
-                <legend>DESSERTS</legend>
-
-                <div class="line"></div>
-
-                <label for="dessert1">
-                    <b>Farandole de desserts</b>
-    
-                    <span>
-                        <span>Du chef</span>
-
-                        <span>18€</span>
-                    </span>
-
-                    <i class="fa-solid fa-circle-check"></i>
-                </label>
-                <input type="radio" id="dessert1" value="dessert1" name="dessert">
-
-
-                        <label for="dessert2">
-                            <b>crème brulée</b>
-
-                            <span>
-                                <span>Revisitée</span>
-
-                                <span>22€</span>
-                            </span>
-
-                            <i class="fa-solid fa-circle-check"></i>
-                        </label>
-                        <input type="radio" id="dessert2" value="dessert2" name="dessert">
-
-
-                                <label for="dessert3">
-                                    <b>Tiramisu</b>
-
-                                    <span>
-                                        <span>A la noisette</span>
-
-                                        <span>23€</span>
-                                    </span>
-                                
-                                    <i class="fa-solid fa-circle-check"></i>
-                                </label>
-                                <input type="radio" id="dessert3" value="dessert3" name="dessert">
-            </fieldset>
+                    <div class="heart-box">
+                        <div class="plein">
             
+                        </div>
+                        <div class="vide">
+            
+                        </div>
+                    </div>
+                </h1>
+                
+            </div>
+        </figure>
+    </header>
+
+    <main class="restaurant__main">
+        <div class="menuCourse">
+            <legend>ENTREES</legend>
+    
+            <div class="line"></div>
+            
+            <div class="menuOption menuOption1">
+                    <div class="dishInfoBox">
+                        <p  class="dish">Tartare de thon</p>
+    
+                        <p class="sides">Assaisonné au yuzu</p>
+                    </div>
+                   
+                    <div class="price">25€</div>
+    
+                    <i class="checkBox">check_circle</i>    
+            </div>
+            
+            <div class="menuOption menuOption2">
+                <div class="dishInfoBox">
+                    <p  class="dish">Bouchée de homard croustillant</p>
+    
+                    <p class="sides">Et sa farandole de petits légumes</p>
+                </div>
+               
+                <div class="price">35€</div>
+    
+                <i class="checkBox">check_circle</i>    
+            </div>
+            
+            <div class="menuOption menuOption3">
+                <div class="dishInfoBox">
+                    <p  class="dish">Velouté de cèpes</p>
+    
+                    <p class="sides">Aux truffes</p>
+                </div>
+               
+                <div class="price">20€</div>
+    
+                <i class="checkBox">check_circle</i>    
+            </div>
+        </div> 
+    
+        <div class="menuCourse">
+            <legend>Plats</legend>
+    
+            <div class="line"></div>
+            
+            <div class="menuOption menuOption1">
+                    <div class="dishInfoBox">
+                        <p  class="dish">Poulet rôti aux herbes de provence</p>
+    
+                        <p class="sides">Et sa crème de truffe</p>
+                    </div>
+                   
+                    <div class="price">40€</div>
+    
+                    <i class="checkBox">check_circle</i>    
+            </div>
+            
+            <div class="menuOption menuOption2">
+                <div class="dishInfoBox">
+                    <p  class="dish">Langoustine rôtie</p>
+    
+                    <p class="sides">Et ses légumes de saison</p>
+                </div>
+               
+                <div class="price">35€</div>
+    
+                <i class="checkBox">check_circle</i>    
+            </div>
+            
+            <div class="menuOption menuOption3">
+                <div class="dishInfoBox">
+                    <p  class="dish">Côte de boeuf angus</p>
+    
+                    <p class="sides">Et sa purée de panais</p>
+                </div>
+               
+                <div class="price">44€</div>
+    
+                <i class="checkBox">check_circle</i>    
+            </div>
+        </div>
+    
+        <div class="menuCourse">
+            <legend>Desserts</legend>
+    
+            <div class="line"></div>
+            
+            <div class="menuOption menuOption1">
+                    <div class="dishInfoBox">
+                        <p  class="dish">Farandole de desserts</p>
+    
+                        <p class="sides">Du chef</p>
+                    </div>
+                   
+                    <div class="price">18€</div>
+    
+                    <i class="checkBox">check_circle</i>    
+            </div>
+            
+            <div class="menuOption menuOption2">
+                <div class="dishInfoBox">
+                    <p  class="dish">crème brulée</p>
+    
+                    <p class="sides">Revisitée</p>
+                </div>
+               
+                <div class="price">22€</div>
+    
+                <i class="checkBox">check_circle</i>    
+            </div>
+            
+            <div class="menuOption menuOption3">
+                <div class="dishInfoBox">
+                    <p  class="dish">Tiramisu</p>
+    
+                    <p class="sides">A la noisette</p>
+                </div>
+               
+                <div class="price">23€</div>
+    
+                <i class="checkBox">check_circle</i>    
+            </div>
+        </div>
+
+        <div class="buttonBox">
             <button>Commander</button>
-        </form>
+        </div>
     </main>
 
     <footer>
