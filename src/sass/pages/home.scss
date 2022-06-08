@@ -146,7 +146,7 @@ main{
 // }
 
 .section-restaurants{
-    width: $mainwidth;
+    width: min(100%, 1200px);
     background-color: var(--gray);
     padding: 60px 20px;
     display: flex;

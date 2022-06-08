@@ -14,7 +14,8 @@
         $horizontalgradient: linear-gradient(0deg, rgba(147,86,220,1) 0%, rgba(255,121,218,1) 100%);
 
 
-        $mainwidth: 100%;
+        $mainwidth: min(100%, 1200px);
+        $adaptativemidwidth:  min(100%, 700px);
         // $mainwidth: min(100%, 1200px);
 
 /*----- shadows -----*/

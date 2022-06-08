@@ -1,0 +1,25 @@
+.buttonBox{
+    width: 100%;
+    display: grid;
+    place-items: center;
+}
+
+.rainbowBtn{
+    color: white;
+    font-size: 24px;
+    background: linear-gradient(0deg, rgba(147,86,220,1) 0%, rgba(255,121,218,1) 53%, rgba(153,226,208,1) 100%);
+    background-size: 250% 250%;
+    background-position: bottom;
+    padding: 15px 30px;
+    border-radius: 50px;
+    border-width: 0;
+    margin: 40px 0;
+    cursor: pointer;
+    transition: all 500ms ease;
+}
+
+.rainbowBtn:hover{
+    color: rgb(69, 84, 80);
+    background-position: top;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.514);
+}

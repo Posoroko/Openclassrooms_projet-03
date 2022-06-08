@@ -1,12 +1,12 @@
 .footer{
     background-color: $gray3;
-    padding: 20px;
+    padding: 20px 100px;
     display: flex;
     flex-direction: column;
     align-items: center;
 
     &__title{
-        width: min(100%, 1000px);
+        width: 100%;
         color: white;
         font-family: 'Shrikhand', cursive;
         font-size: max(14px, 1.5vw);
@@ -14,11 +14,10 @@
         display: block;
     }
     &__nav-box{
-        width: min(100%, 1000px);
+        width: 100%;
         margin-top: 12px;
         display: flex;
-        flex-direction: column;
-        justify-content: space-between;
+        
         flex-wrap: wrap;
 
         &__link{
@@ -33,5 +32,18 @@
                 display: inline-block;
             }
         }
+    }
+}
+@media (max-width: 1199px){
+    .footer__nav-box{
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    
+}
+@media (min-width: 1200px){
+    .footer__nav-box{
+        flex-direction: row;
+        justify-content: space-between;
     }
 }
