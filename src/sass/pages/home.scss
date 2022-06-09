@@ -18,12 +18,13 @@ main{
     background-color: $gray1;
 
     &__title{
-        font-size: 28px;
+        font-size: clamp(24px, 2vw, 32px);
         text-align: center;
+        padding: 0 40px;
     }
 
     .section-intro__slogan{
-        font-size: 22px;
+        font-size: clamp(20px, 2vw, 24px);
         font-weight: 300;
         padding: 20px max(5vw, 15px) 0 max(5vw, 15px);
         text-align: center;
@@ -57,7 +58,7 @@ main{
             font-weight: 500;
             padding: 30px 40px;
             border-radius: 25px;
-            margin-top: 40px;
+            margin-top: 25px;
             box-shadow: $shadow;
             position: relative;
             transition: background-color 300ms;
@@ -126,24 +127,6 @@ main{
 
     }
 }
-
-// .section-restaurants{
-//     width: min(100%, 1000px);
-//     background-color: var(--gray);
-//     padding: 60px 20px;
-//     display: flex;
-//     flex-wrap: wrap;
-//     justify-content: center;
-
-//     /*restaurant card imported at page top */
-
-//     &__title{
-//         width: 100%;
-//         font-size: 28px;
-//         font-weight: 800;
-//     }
-
-// }
 
 .section-restaurants{
     width: min(100%, 1200px);
