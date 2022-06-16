@@ -1,10 +1,10 @@
 /*----- abstracts -----*/
 
+        @import './abstracts/variables.scss';
         @import './abstracts/dev-classes.scss';
         @import './abstracts/breakpoints.scss';
         @import './abstracts/reset.scss';
-        @import './abstracts/variables.scss';
-
+        
 /*----- base -----*/
 
         @import './base/fonts.scss';
@@ -26,3 +26,4 @@
         @import './components/buttons.scss';
         @import './components/heart.scss';
         @import './components/loader.scss';
+        @import './components/card.scss';

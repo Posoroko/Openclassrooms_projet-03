@@ -1,13 +1,12 @@
 .header{
     width: 100%;
     background-color: white;
-    // box-shadow: $shadow;
 
     .title-box{
         width: 100%;
         position: relative;
         z-index: 10;
-        box-shadow: $shadow;
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.171);
     }
     .header__title{
         font-family: "Shrikhand";

@@ -1,3 +1,5 @@
+@import '../abstracts/variables.scss';
+
 .restaurant__main{
     padding: 40px 0;
     margin: auto;
@@ -76,11 +78,11 @@
 
 
 
-.menuOption:hover .dishInfoBox{
+.menuOption:active .dishInfoBox{
     width: calc(90% - min(15vw, 70px));
 }
 
-.menuOption:hover .checkBox{
+.menuOption:active .checkBox{
     width: min(20vw, 70px);
 }
 
@@ -104,26 +106,44 @@
         width: 33.33333%;
     }
 }
-
+$slideDuration: 400ms;
 .menuOption1{
-    animation: 400ms linear 0s forwards fadeIn;
+    animation: $slideDuration linear 0s forwards fadeIn;
 }
 .menuOption2{
-    animation: 400ms linear 200ms forwards fadeIn;
+    animation: $slideDuration linear 200ms forwards fadeIn;
 }
 .menuOption3{
-    animation: 400ms linear 400ms forwards fadeIn;
+    animation: $slideDuration linear 400ms forwards fadeIn;
 }
 .menuOption4{
-    animation: 400ms linear 600ms forwards fadeIn;
+    animation: $slideDuration linear 600ms forwards fadeIn;
+}
+.menuOption5{
+    animation: $slideDuration linear 800ms forwards fadeIn;
+}
+.menuOption6{
+    animation: $slideDuration linear 1000ms forwards fadeIn;
+}
+.menuOption7{
+    animation: $slideDuration linear 1200ms forwards fadeIn;
+}
+.menuOption8{
+    animation: $slideDuration linear 1400ms forwards fadeIn;
+}
+.menuOption9{
+    animation: $slideDuration linear 1600ms forwards fadeIn;
+}
+.menuOption10{
+    animation: $slideDuration linear 1800ms forwards fadeIn;
 }
 @keyframes fadeIn{
     0%{
         opacity: 0;
-        top: 10%
+        transform: translateY(20px);
     }
     100%{
         opacity: 1;
-        top: 0%
+        transform: translateY(0px);
     }
 }
