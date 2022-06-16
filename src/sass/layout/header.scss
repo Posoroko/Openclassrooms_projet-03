@@ -82,12 +82,26 @@
                 align-items: center;
 
                 & .heart-box{
-                    scale: 120%;
                     position: absolute;
                     bottom: 20%;
-                    // transform: translateY(0%);
                     right: 0;
                     overflow: visible;
+                }
+                @media (max-width: 449px) {
+                    .heart-box{
+                        scale: 100%;
+                        margin-right: 10px;
+                    }
+                }
+                @media (min-width: 550px) and (max-width: 799px) {
+                    .heart-box{
+                        scale: 120%;
+                    }
+                }
+                @media (min-width: 800px) {
+                    .heart-box{
+                    scale: 150%;
+                }
                 }
             }
         }

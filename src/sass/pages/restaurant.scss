@@ -1,7 +1,7 @@
 @import '../abstracts/variables.scss';
 
 .restaurant__main{
-    padding: 40px 0;
+    padding: 40px 8px;
     margin: auto;
     background-color: $gray;
     overflow: hidden;
@@ -10,11 +10,17 @@
 }
 
 .menuCourse{
-    // width: 100%;
-    padding: 10px;
+    font-size: 17px;
+    padding: 20px;
+    margin-top: 10px;
     border-width: 0;
     display: flex;
     flex-direction: column;
+}
+.line{
+    width: 40px;
+    border-top: 3px solid $teal;
+    margin-top: 7px;
 }
 
 .menuOption{
@@ -27,56 +33,53 @@
     cursor: pointer;
     overflow: hidden;
     position: relative;
-    opacity: 0;
-    
+    // opacity: 0;
 }
 
-        .dishInfoBox{
-            width: 90%;
-            font-weight: 300;
-            transition: $checkbox;
-        }
+.dishInfoBox{
+    width: 85%;
+    font-weight: 300;
+    transition: $checkbox;
+}
 
 
-                    .dish{
-                        width: 100%;
-                        font-size: clamp(18px, 2.5vw, 22px);
-                        font-weight: 700;
-                        padding: 10px 0 0 15px;
-                        overflow: hidden;
-                        white-space: nowrap;
-                        text-overflow: ellipsis;
-                    }
-                    .sides{
-                        font-size: clamp(16px, 1.5vw, 20px);
-                        padding-top: 10px;
-                        padding: 5px 0 10px 15px;
-                        overflow: hidden;
-                        white-space: nowrap;
-                        text-overflow: ellipsis;
-                    }
+.dish{
+    width: 100%;
+    font-size: clamp(18px, 2.5vw, 22px);
+    font-weight: 700;
+    padding: 10px 0 0 15px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.sides{
+    font-size: clamp(16px, 1.5vw, 20px);
+    padding-top: 10px;
+    padding: 5px 0 10px 15px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
                     
-        .price{
-            width: 10%;
-            font-size: clamp(13px, 2.5vw, 23px);
-            font-weight: 700;
-            padding: 0 20px 10px 0;
-            display: flex;
-            justify-content: center;
-            align-items: flex-end;
-        }
+.price{
+    width: 15%;
+    font-size: clamp(16px, 2.5vw, 23px);
+    font-weight: 400;
+    padding: 0 10px 8px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
 
-        .checkBox{
-            width: 0px;
-            color: white;
-            font-size: 20px;
-            background-color: $teal;
-            display: grid;
-            place-items: center;
-            transition: $checkbox;
-        }
-
-
+.checkBox{
+    width: 0%;
+    color: white;
+    font-size: clamp(26px, 1.6vw, 30px);
+    background-color: $teal;
+    display: grid;
+    place-items: center;
+    transition: $checkbox;
+}
 
 .menuOption:active .dishInfoBox{
     width: calc(90% - min(15vw, 70px));
@@ -137,6 +140,7 @@ $slideDuration: 400ms;
 .menuOption10{
     animation: $slideDuration linear 1800ms forwards fadeIn;
 }
+
 @keyframes fadeIn{
     0%{
         opacity: 0;
@@ -147,3 +151,4 @@ $slideDuration: 400ms;
         transform: translateY(0px);
     }
 }
+
