@@ -1,7 +1,6 @@
 @import '../abstracts/variables.scss';
 
 .section-restaurants .card{
-    width: min(100%, 560px);
     height: clamp(300px, 20vw, 350px);
     background-color: white;
     border-radius: 20px;
@@ -11,6 +10,8 @@
     display: block;
     position: relative;
 
+    
+
     & figure{
         width: 100%;
         height: 100%;
@@ -19,7 +20,7 @@
 
         & .image{
             width: 100%;
-            height: 100%;
+            height: 70%;
             object-fit: cover;
         }
         
@@ -58,4 +59,14 @@
     }
 }
 
+@media (max-width: 899px) {
+    .section-restaurants .card {
+        width: min(100%, 350px);
+    }
+}
 
+@media (min-width: 900px) {
+    .section-restaurants .card {
+        width: min(40vw, 560px);
+    }
+}
