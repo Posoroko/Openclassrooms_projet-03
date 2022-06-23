@@ -1,7 +1,7 @@
 @import '../abstracts/variables.scss';
 
 .section-restaurants .card{
-    height: clamp(300px, 20vw, 350px);
+    height: clamp(250px, 20vw, 350px);
     background-color: white;
     border-radius: 20px;
     margin: 20px 10px 0 10px;
