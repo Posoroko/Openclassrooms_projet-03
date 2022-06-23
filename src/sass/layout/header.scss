@@ -89,18 +89,18 @@
                 }
                 @media (max-width: 449px) {
                     .heart-box{
-                        scale: 100%;
+                        transform: scale(1);
                         margin-right: 10px;
                     }
                 }
                 @media (min-width: 550px) and (max-width: 799px) {
                     .heart-box{
-                        scale: 120%;
+                        transform: scale(1.2);
                     }
                 }
                 @media (min-width: 800px) {
                     .heart-box{
-                    scale: 150%;
+                        transform: scale(1.5);
                 }
                 }
             }
